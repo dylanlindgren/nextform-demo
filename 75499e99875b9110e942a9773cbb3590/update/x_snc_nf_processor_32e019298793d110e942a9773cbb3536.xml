@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_nf_processor">
+    <x_snc_nf_processor action="INSERT_OR_UPDATE">
+        <name>Sample NextForm Object Processor</name>
+        <script><![CDATA[(function processNextFormResult (nfData) {
+	
+	gs.info('NextForm Processed!');
+
+})(nfData);]]></script>
+        <sys_class_name>x_snc_nf_processor</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2022-11-21 03:03:41</sys_created_on>
+        <sys_id>32e019298793d110e942a9773cbb3536</sys_id>
+        <sys_name>Sample NextForm Object Processor</sys_name>
+        <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
+        <sys_update_name>x_snc_nf_processor_32e019298793d110e942a9773cbb3536</sys_update_name>
+    </x_snc_nf_processor>
+</record_update>

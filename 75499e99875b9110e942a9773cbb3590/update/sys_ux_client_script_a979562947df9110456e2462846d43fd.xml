@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Home default">a1c9121d875b9110e942a9773cbb359e</macroponent>
+        <name>stylized_text_1/text</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return "You're on screen: " + (api.data.nextform.currentScreenIndex + 1);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2022-11-21 08:19:39</sys_created_on>
+        <sys_id>a979562947df9110456e2462846d43fd</sys_id>
+        <sys_name>stylized_text_1/text</sys_name>
+        <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_a979562947df9110456e2462846d43fd</sys_update_name>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

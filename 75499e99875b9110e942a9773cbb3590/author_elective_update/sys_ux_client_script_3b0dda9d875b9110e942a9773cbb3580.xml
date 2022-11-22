@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Home default">a1c9121d875b9110e942a9773cbb359e</macroponent>
+        <name>stylized_text_1/text</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return 'ShowDynamic: ' + api.state.showDynamic;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2022-11-20 13:56:54</sys_created_on>
+        <sys_id>3b0dda9d875b9110e942a9773cbb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stylized_text_1/text</sys_name>
+        <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_3b0dda9d875b9110e942a9773cbb3580</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2022-11-20 13:56:54</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</application>
+        <file_path/>
+        <instance_id>f60598d9db7e1d5c07072f17d49619fb</instance_id>
+        <instance_name>dldev2</instance_name>
+        <name>sys_ux_client_script_3b0dda9d875b9110e942a9773cbb3580</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Home default"&gt;a1c9121d875b9110e942a9773cbb359e&lt;/macroponent&gt;&lt;name&gt;stylized_text_1/text&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return 'ShowDynamic: ' + api.state.showDynamic;
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dylan.lindgren&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-20 13:56:54&lt;/sys_created_on&gt;&lt;sys_id&gt;3b0dda9d875b9110e942a9773cbb3580&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;stylized_text_1/text&lt;/sys_name&gt;&lt;sys_package display_value="NextForm Demo" source="x_snc_nf_demo"&gt;75499e99875b9110e942a9773cbb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NextForm Demo"&gt;75499e99875b9110e942a9773cbb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_3b0dda9d875b9110e942a9773cbb3580&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dylan.lindgren&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-20 13:56:54&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1884094726</payload_hash>
+        <record_name>stylized_text_1/text</record_name>
+        <reverted_from/>
+        <source>d7791ad9875b9110e942a9773cbb351a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2022-11-20 13:56:54</sys_created_on>
+        <sys_id>cc1dda9d875b9110e942a9773cbb3582</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1849553e78c0000001</sys_recorded_at>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2022-11-20 13:56:54</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>481dda9d3a5b9110034a7b64ab81ae82</update_guid>
+        <update_guid_history>481dda9d3a5b9110034a7b64ab81ae82:-1884094726</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2022-11-21 08:19:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>19427508e20e410a859d4fcaa4c1bc84</sys_id>
+        <sys_metadata>3b0dda9d875b9110e942a9773cbb3580</sys_metadata>
+        <sys_name>stylized_text_1/text</sys_name>
+        <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
+        <sys_scope_delete display_value="">0d13341765644703b705276898e31d49</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_3b0dda9d875b9110e942a9773cbb3580</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_3b0dda9d875b9110e942a9773cbb3580">cc1dda9d875b9110e942a9773cbb3582</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
