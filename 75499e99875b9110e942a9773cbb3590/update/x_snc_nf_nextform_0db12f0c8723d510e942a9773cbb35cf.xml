@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_nf_nextform">
+    <x_snc_nf_nextform action="INSERT_OR_UPDATE">
+        <generator display_value="Sample NextForm Generator">8a20dde58793d110e942a9773cbb355b</generator>
+        <name>Sample NextForm</name>
+        <processor display_value="Sample NextForm Object Processor">32e019298793d110e942a9773cbb3536</processor>
+        <sys_class_name>x_snc_nf_nextform</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2022-11-29 08:00:13</sys_created_on>
+        <sys_id>0db12f0c8723d510e942a9773cbb35cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sample NextForm</sys_name>
+        <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
+        <sys_update_name>x_snc_nf_nextform_0db12f0c8723d510e942a9773cbb35cf</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2022-11-29 08:00:13</sys_updated_on>
+    </x_snc_nf_nextform>
+</record_update>

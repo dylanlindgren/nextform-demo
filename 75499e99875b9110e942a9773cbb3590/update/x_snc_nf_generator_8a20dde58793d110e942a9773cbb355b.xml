@@ -3,79 +3,48 @@
         <name>Sample NextForm Generator</name>
         <script><![CDATA[(function generateNextFormObject() {
 
-    return {
-        screens: [{
-                sections: [{
-                    "sysId": "bf1d96e3c0a801640190725e63f8ac80",
-                    "caption": "example",
-                    "captionDisplay": "Example Section",
-                    "rows": [
-                        [{
-                            "fields": ["title"]
-                        }],
-                        [{
-                                "fields": ["annual_rgu_target", "start"]
-                            },
-                            {
-                                "fields": ["review", "end"]
-                            }
-                        ]
-                    ],
-                    "id": 0,
-                    "label": "Example Section",
-                    "defaultSection": true,
-                    "expanded": true
-                }],
-                fields: {
-                    "title": new x_snc_nf.Field("string", "Title", "title").toJSON(),
-                    "annual_rgu_target": new x_snc_nf.Field("integer", "Annual RGU Target", "annual_rgu_target").toJSON(),
-                    "review": new x_snc_nf.Field("choice", "Review", "review").toJSON(),
-                    "start": new x_snc_nf.Field("dateTime", "Start", "start").toJSON(),
-                    "end": new x_snc_nf.Field("dateTime", "End", "end").toJSON()
-                }
-            },
-            {
-                sections: [{
-                    "sysId": "bf1d96e3c0a801640190725e63f8ac80",
-                    "caption": "example",
-                    "captionDisplay": "Example Section",
-                    "rows": [
-                        [{
-                                "fields": ["annual_rgu_target", "start"]
-                            },
-                            {
-                                "fields": ["review", "end"]
-                            }
-                        ],
-                        [{
-                            "fields": ["title"]
-                        }],
-                    ],
-                    "id": 0,
-                    "label": "Example Section",
-                    "defaultSection": true,
-                    "expanded": true
-                }],
-                fields: {
-                    "title": new x_snc_nf.Field("string", "Second Title", "title").toJSON(),
-                    "annual_rgu_target": new x_snc_nf.Field("integer", "Second Annual RGU Target", "annual_rgu_target").toJSON(),
-                    "review": new x_snc_nf.Field("choice", "Second Review", "review").toJSON(),
-                    "start": new x_snc_nf.Field("dateTime", "Second Start", "start").toJSON(),
-                    "end": new x_snc_nf.Field("dateTime", "Second End", "end").toJSON()
-                }
-            }
-        ]
-    };
+	return new x_snc_nf.NextForm()
+		.addScreen()
+		.addRow().addColumn()
+		.addField(new x_snc_nf.NextField("string", "What is your given name?", "name_given"))
+		.addRow().addColumn()
+		.addField(new x_snc_nf.NextField("integer", "What is your family name?", "name_family"))
+		.addField(new x_snc_nf.NextField("choice", "What is your age?", "age", {
+            choices: [{
+                displayValue: "Under 18",
+                value: "under_18"
+            },{
+                displayValue: "18 and Over",
+                value: "over_18"
+            }],
+            value: 'under_18',
+            displayValue: 'Under 18'
+        }))
+		.addColumn()
+		.addField(new x_snc_nf.NextField("dateTime", "When did you last sleep?", "sleep"))
+		.addField(new x_snc_nf.NextField("dateTime", "When did you last wake up?", "wake"))
+		.addScreen()
+		.addRow().addColumn()
+		.addField(new x_snc_nf.NextField("textarea", "Tell me about yourself?", "details", {
+            maxLength: 4000
+        }))
+		.addScreen()
+		.addRow().addColumn()
+		.addField(new x_snc_nf.NextField("boolean", "Would you like to receive marketing communications?", "marketing_allowed"))
+        .toJSON();
 
 })();]]></script>
         <sys_class_name>x_snc_nf_generator</sys_class_name>
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2022-11-21 03:02:17</sys_created_on>
         <sys_id>8a20dde58793d110e942a9773cbb355b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Sample NextForm Generator</sys_name>
         <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
         <sys_update_name>x_snc_nf_generator_8a20dde58793d110e942a9773cbb355b</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2022-11-29 08:33:22</sys_updated_on>
     </x_snc_nf_generator>
 </record_update>

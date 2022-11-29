@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
-        <macroponent display_value="Home default">a1c9121d875b9110e942a9773cbb359e</macroponent>
-        <name>stylized_text_1/text</name>
+        <macroponent display_value="Example">0a599b448723d510e942a9773cbb35fa</macroponent>
+        <name>stylized_text_2/text</name>
         <preset/>
-        <required_translations/>
+        <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
   * @param {params} params
   * @param {api} params.api
   * @param {TransformApiHelpers} params.helpers
   */
 function evaluateProperty({api, helpers}) {
-	return "You're on screen: " + (api.data.nextform.currentScreenIndex + 1);
+	return "You're on screen " + api.data.nextform.currentScreenNumber + " of " + api.data.nextform.screenCount;
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>dylan.lindgren</sys_created_by>
-        <sys_created_on>2022-11-21 08:19:39</sys_created_on>
-        <sys_id>a979562947df9110456e2462846d43fd</sys_id>
-        <sys_name>stylized_text_1/text</sys_name>
+        <sys_created_on>2022-11-29 07:46:15</sys_created_on>
+        <sys_id>de8e9f488723d510e942a9773cbb35b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>stylized_text_2/text</sys_name>
         <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
-        <sys_update_name>sys_ux_client_script_a979562947df9110456e2462846d43fd</sys_update_name>
+        <sys_update_name>sys_ux_client_script_de8e9f488723d510e942a9773cbb35b2</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2022-11-29 07:47:48</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

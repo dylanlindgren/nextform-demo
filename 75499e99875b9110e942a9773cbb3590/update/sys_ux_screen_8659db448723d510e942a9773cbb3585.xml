@@ -4,13 +4,13 @@
         <app_config display_value="Nextform Demo">ddb9ded9875b9110e942a9773cbb35a6</app_config>
         <description/>
         <event_mappings>[ {
-  "eventMappingId" : "clbbbxczdiiaaeepqddbhhvtlgcjjeest",
+  "eventMappingId" : "clbbbxhhsdbbaaddkoddbhhvnljhhccsqn",
   "isConfiguration" : false,
   "offRowStorageId" : null,
-  "sourceEventApiName" : "x_snc_nf_demo.NAV_ITEM_SELECTED_RELAY_a1c9121d875b9110e942a9773cbb359e",
+  "sourceEventApiName" : "x_snc_nf_demo.NAV_ITEM_SELECTED_RELAY_0a599b448723d510e942a9773cbb35fa",
   "sourceEventCorrelationId" : null,
   "sourceEventDefinition" : {
-    "apiName" : "x_snc_nf_demo.NAV_ITEM_SELECTED_RELAY_a1c9121d875b9110e942a9773cbb359e",
+    "apiName" : "x_snc_nf_demo.NAV_ITEM_SELECTED_RELAY_0a599b448723d510e942a9773cbb35fa",
     "id" : null,
     "type" : "UXEVENT"
   },
@@ -84,11 +84,11 @@
       "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
     },
     "operation" : null,
-    "targetId" : "clbbbxczdhhaaeeppddbhhvddcntfijd",
+    "targetId" : "clbbbxhhsdaaaaddknddbhhvvddjjuwshhc",
     "type" : "EVENT"
   } ]
 } ]</event_mappings>
-        <macroponent display_value="Home default">a1c9121d875b9110e942a9773cbb359e</macroponent>
+        <macroponent display_value="Example">0a599b448723d510e942a9773cbb35fa</macroponent>
         <macroponent_config>{
   "label" : {
     "type" : "TRANSLATION_LITERAL",
@@ -123,28 +123,28 @@
     "value" : false
   }
 }</macroponent_config>
-        <name>Home default</name>
+        <name>Example default</name>
         <order>0</order>
         <parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>
-        <screen_type display_value="Home">99c9121d875b9110e942a9773cbb359b</screen_type>
+        <screen_type display_value="Example">fd599b448723d510e942a9773cbb35f7</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>dylan.lindgren</sys_created_by>
-        <sys_created_on>2022-11-20 13:42:32</sys_created_on>
+        <sys_created_on>2022-11-29 07:23:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a5c9121d875b9110e942a9773cbb35df</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Home default</sys_name>
+        <sys_id>8659db448723d510e942a9773cbb3585</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Example default</sys_name>
         <sys_overrides/>
         <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
-        <sys_update_name>sys_ux_screen_a5c9121d875b9110e942a9773cbb35df</sys_update_name>
+        <sys_update_name>sys_ux_screen_8659db448723d510e942a9773cbb3585</sys_update_name>
         <sys_updated_by>dylan.lindgren</sys_updated_by>
-        <sys_updated_on>2022-11-29 07:55:51</sys_updated_on>
+        <sys_updated_on>2022-11-29 07:51:50</sys_updated_on>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=a5c9121d875b9110e942a9773cbb35df"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8659db448723d510e942a9773cbb3585"/>
 </record_update>

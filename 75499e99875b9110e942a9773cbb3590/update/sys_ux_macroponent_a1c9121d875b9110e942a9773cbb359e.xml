@@ -4,21 +4,19 @@
         <category>page</category>
         <component_dependencies/>
         <composition>[ {
-  "elementId" : "txt_screen_indicator",
-  "elementLabel" : "Screen Indicator",
+  "elementId" : "txt_header",
+  "elementLabel" : "Page header",
   "propertyValues" : {
     "css" : {
       "type" : "JSON_LITERAL",
       "value" : "* { }"
     },
     "text" : {
-      "type" : "CLIENT_TRANSFORM_SCRIPT",
-      "script" : {
-        "apiVersion" : "2.0.0",
-        "controllerElementId" : null,
-        "inlineScript" : null,
-        "scriptSysId" : "a979562947df9110456e2462846d43fd",
-        "target" : null
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "NextForm",
+        "comment" : ""
       }
     },
     "tag" : {
@@ -27,7 +25,7 @@
     }
   },
   "eventMappings" : [ ],
-  "slot" : "",
+  "slot" : null,
   "definition" : {
     "id" : "4335ba6dca80378f7ba7a67cd6667bec",
     "type" : "MACROPONENT"
@@ -43,234 +41,116 @@
   "items" : [ ],
   "styles" : { }
 }, {
-  "elementId" : "ctr_screen_nav",
-  "elementLabel" : "Screen Navigation",
+  "elementId" : "btn_tryexample1",
+  "elementLabel" : "Try Example 1 button",
   "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
+    "size" : {
       "type" : "JSON_LITERAL",
-      "value" : "1"
+      "value" : "lg"
     },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
+    "variant" : {
+      "type" : "JSON_LITERAL",
+      "value" : "primary"
     },
-    "includeAriaHeading" : {
+    "icon" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "disabled" : {
       "type" : "JSON_LITERAL",
       "value" : false
     },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Try Example 1",
+        "comment" : ""
+      }
     },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
+    "tooltipContent" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Enter a label",
+        "comment" : ""
+      }
+    },
+    "configAria" : {
+      "type" : "MAP_CONTAINER",
+      "container" : { }
     }
   },
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "clbbbxcqrddaaeephddbhhvnjwgftqdd",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_snc_nf_demo.NAV_ITEM_SELECTED_RELAY_a1c9121d875b9110e942a9773cbb359e",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "route" : {
+              "type" : "JSON_LITERAL",
+              "value" : "example"
+            },
+            "fields" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "params" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "redirect" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "passiveNavigation" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "multiInstField" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "targetRoute" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "external" : null
+          }
+        },
+        "sysId" : "6ab06b048723d510e942a9773cbb350d"
+      },
+      "operation" : null,
+      "targetId" : "clbbbxcqreeaaeepiddbhhvjiiiiiqovh",
+      "type" : "EVENT"
+    } ]
+  } ],
   "slot" : null,
   "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "id" : "d37ce8abca89d02905fed903c8e34d8e",
     "type" : "MACROPONENT"
   },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "btn_first_screen",
-      "elementLabel" : "First Screen Button",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "lg"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary-positive"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "First Screen",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ {
-        "eventMappingId" : "clapfiimciaabbffrddbhhsaauffiaaoohh",
-        "isConfiguration" : false,
-        "offRowStorageId" : null,
-        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-        "sourceEventCorrelationId" : null,
-        "sourceEventDefinition" : {
-          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-          "id" : null,
-          "type" : "UXEVENT"
-        },
-        "sourceEventSysId" : null,
-        "targets" : [ {
-          "broker" : null,
-          "clientScript" : null,
-          "conditional" : null,
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : {
-            "dataBrokerId" : "bc6738a18753d110e942a9773cbb3583",
-            "operationName" : "CTRL_NEXTFORM#CHANGE_SCREEN",
-            "parentResourceId" : "nextform",
-            "payload" : {
-              "type" : "JSON_LITERAL",
-              "value" : {
-                "screenIndex" : "0"
-              }
-            }
-          },
-          "targetId" : "claqcixraaaabbggddddbhhsbbgngjdqee",
-          "type" : "DATABROKER_OP"
-        } ]
-      } ],
-      "slot" : "",
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : { }
-    }, {
-      "elementId" : "btn_second_screen",
-      "elementLabel" : "Second Screen Button",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "lg"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "secondary"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Second Screen",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ {
-        "eventMappingId" : "claqcjeebbiaabbggjjddbhhsbngghpccccu",
-        "isConfiguration" : false,
-        "offRowStorageId" : null,
-        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-        "sourceEventCorrelationId" : null,
-        "sourceEventDefinition" : {
-          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-          "id" : null,
-          "type" : "UXEVENT"
-        },
-        "sourceEventSysId" : null,
-        "targets" : [ {
-          "broker" : null,
-          "clientScript" : null,
-          "conditional" : null,
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : {
-            "dataBrokerId" : "bc6738a18753d110e942a9773cbb3583",
-            "operationName" : "CTRL_NEXTFORM#CHANGE_SCREEN",
-            "parentResourceId" : "nextform",
-            "payload" : {
-              "type" : "JSON_LITERAL",
-              "value" : {
-                "screenIndex" : 1
-              }
-            }
-          },
-          "targetId" : "claqcjeebbiaabbggaddbhhsffttkjjepy",
-          "type" : "DATABROKER_OP"
-        } ]
-      } ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : { }
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"btn_first_screen","styles":{}},{"element_id":"btn_second_screen","styles":{}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"row","justify-content":"space-around","padding":"var(--now-static-space--lg)"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      },
-      "version" : "3.0.0"
-    }
-  },
+  "overrides" : null,
   "isHidden" : {
     "type" : "JSON_LITERAL",
     "value" : null
@@ -279,409 +159,12 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
-}, {
-  "elementId" : "ctr_actions",
-  "elementLabel" : "Actions",
-  "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1"
-    },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
-    },
-    "includeAriaHeading" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
-    },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "button_3",
-      "elementLabel" : "Button 3",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "lg"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Submit",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ {
-        "eventMappingId" : "claqformddaabbggjjddbhhstzsteezrhh",
-        "isConfiguration" : false,
-        "offRowStorageId" : null,
-        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-        "sourceEventCorrelationId" : null,
-        "sourceEventDefinition" : {
-          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-          "id" : null,
-          "type" : "UXEVENT"
-        },
-        "sourceEventSysId" : null,
-        "targets" : [ {
-          "broker" : null,
-          "clientScript" : null,
-          "conditional" : null,
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : {
-            "dataBrokerId" : "bc6738a18753d110e942a9773cbb3583",
-            "operationName" : "CTRL_NEXTFORM#PROCESS_NEXTFORM",
-            "parentResourceId" : "nextform",
-            "payload" : {
-              "type" : "JSON_LITERAL",
-              "value" : { }
-            }
-          },
-          "targetId" : "claqformddaabbggaddbhhsgsncciijbbk",
-          "type" : "DATABROKER_OP"
-        } ]
-      } ],
-      "slot" : "",
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : { }
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"button_3","styles":{}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"column","align-items":"flex-end","padding":"var(--now-static-space--lg)"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      },
-      "version" : "3.0.0"
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : {
-    "width" : "100%",
-    "align-self" : "flex-end"
-  }
-}, {
-  "elementId" : "ctr_form_area",
-  "elementLabel" : "Form Area",
-  "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1"
-    },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
-    },
-    "includeAriaHeading" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
-    },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "form",
-      "elementLabel" : "Form",
-      "propertyValues" : {
-        "encodedRecord" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "sysId" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "isSectionTitleHidden" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "relatedLists" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "formMessages" : {
-          "type" : "JSON_LITERAL",
-          "value" : [ ]
-        },
-        "isRemovePaddingLeft" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "isContextMenuHidden" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "isFormOptionsHidden" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "sections" : {
-          "type" : "DATA_OUTPUT_BINDING",
-          "binding" : {
-            "address" : [ "nextform", "sections" ]
-          }
-        },
-        "inUiBuilder" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "scrollableHost" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "view" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "inRecordPageTab" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "isSectionMenuHidden" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "serializedChanges" : {
-          "type" : "JSON_LITERAL",
-          "value" : [ ]
-        },
-        "userSession" : {
-          "type" : "CONTEXT_BINDING",
-          "binding" : {
-            "address" : [ "user" ],
-            "category" : "session"
-          }
-        },
-        "disableCollapse" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "fields" : {
-          "type" : "DATA_OUTPUT_BINDING",
-          "binding" : {
-            "address" : [ "nextform", "fields" ]
-          }
-        },
-        "config" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "table" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : "",
-      "definition" : {
-        "id" : "cdf8d604a3fda59e69ccd6dd407263d6",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : { }
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"form","styles":{"width":"100%"}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"column","padding":"var(--now-static-space--lg)","align-items":"center"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      },
-      "version" : "3.0.0"
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : {
-    "width" : "100%",
-    "min-width" : "800px",
-    "max-width" : "800px",
-    "align-self" : "center"
-  }
+  "styles" : { }
 } ]</composition>
         <da_relay_models/>
-        <data>[ {
-  "definition" : {
-    "id" : "f953f22887971110e942a9773cbb3528",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "get_nextform_object",
-  "elementLabel" : "Get NextForm Object",
-  "eventMappings" : [ ],
-  "inputValues" : {
-    "nextform_id" : {
-      "type" : "JSON_LITERAL",
-      "value" : "cbb291a98793d110e942a9773cbb35ff"
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "definition" : {
-    "id" : "029f04e053610110ac9bddeeff7b1294",
-    "type" : "CONTROLLER"
-  },
-  "dependencies" : { },
-  "elementId" : "record",
-  "elementLabel" : "Record",
-  "eventMappings" : [ ],
-  "inputValues" : {
-    "inputTable" : {
-      "type" : "JSON_LITERAL",
-      "value" : "incident"
-    },
-    "inputSysId" : {
-      "type" : "JSON_LITERAL",
-      "value" : "-1"
-    },
-    "inputQuery" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "view" : {
-      "type" : "JSON_LITERAL",
-      "value" : "default view"
-    },
-    "forcedViewName" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "detailsContext" : {
-      "type" : "JSON_LITERAL",
-      "value" : { }
-    },
-    "inputExtraParams" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "definition" : {
-    "id" : "bc6738a18753d110e942a9773cbb3583",
-    "type" : "CONTROLLER"
-  },
-  "dependencies" : { },
-  "elementId" : "nextform",
-  "elementLabel" : "NextForm",
-  "eventMappings" : [ ],
-  "inputValues" : {
-    "nextFormSysId" : {
-      "type" : "JSON_LITERAL",
-      "value" : "cbb291a98793d110e942a9773cbb35ff"
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-} ]</data>
+        <data>[ ]</data>
         <description/>
-        <dispatched_events/>
+        <dispatched_events>6ab06b048723d510e942a9773cbb350d</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events/>
@@ -692,10 +175,10 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"ctr_screen_nav","styles":{}},{"element_id":"txt_screen_indicator","styles":{"align-self":"center"}},{"element_id":"ctr_form_area","styles":{}},{"element_id":"ctr_actions","styles":{}}],
+    "items" : [{"element_id":"txt_header","styles":{}},{"element_id":"btn_tryexample1","styles":{}}],
     "root" : null,
     "rules" : null,
-    "styles" : {"flex-direction":"column"},
+    "styles" : {"flex-direction":"column","align-items":"center"},
     "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
     "type" : "flex"
   },
@@ -709,13 +192,10 @@
   "message" : "Enter a label",
   "comment" : ""
 }, {
-  "message" : "First Screen",
+  "message" : "NextForm",
   "comment" : ""
 }, {
-  "message" : "Second Screen",
-  "comment" : ""
-}, {
-  "message" : "Submit",
+  "message" : "Try Example 1",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -744,16 +224,645 @@
     "type" : "JSON_LITERAL",
     "value" : 0
   }
+}, {
+  "name" : "fields123",
+  "label" : "fields123",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "title1" : {
+        "fieldType" : "string",
+        "label" : "Title1",
+        "name" : "title1",
+        "fieldData" : {
+          "name" : "title1",
+          "label" : "Title1",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "maxLength" : 160,
+          "defaultRows" : null,
+          "type" : "string",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "string",
+          "value" : "",
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "annual_rgu_target1" : {
+        "fieldType" : "integer",
+        "label" : "Annual RGU Target1",
+        "name" : "annual_rgu_target1",
+        "fieldData" : {
+          "name" : "annual_rgu_target1",
+          "dictionary" : {
+            "type" : "integer",
+            "dependentFieldLabel" : null,
+            "dependentField" : null,
+            "dependentTable" : null,
+            "name" : "annual_rgu_target1",
+            "label" : "Annual RGU Target1",
+            "fieldHint" : "",
+            "canWrite" : true,
+            "canRead" : true,
+            "canCreate" : true,
+            "internalType" : "integer",
+            "isMandatory" : false,
+            "isEncrypted" : false,
+            "encryptionContext" : "",
+            "sys_readonly" : false,
+            "attributes" : [ ]
+          },
+          "maxLength" : 40,
+          "defaultRows" : null,
+          "type" : "integer",
+          "label" : "Annual RGU Target1",
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "dependentField" : null,
+          "dependentTable" : null,
+          "referringTable" : null,
+          "referringRecordId" : null,
+          "internalType" : "integer",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "isGlideVar" : false,
+          "value" : "",
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ],
+          "sys_readonly" : false,
+          "originalValue" : "",
+          "autofocus" : true
+        }
+      },
+      "review1" : {
+        "fieldType" : "choice",
+        "label" : "Review1",
+        "name" : "review1",
+        "fieldData" : {
+          "name" : "review1",
+          "dictionary" : {
+            "type" : "choice",
+            "dependentFieldLabel" : null,
+            "dependentField" : null,
+            "dependentTable" : null,
+            "name" : "review1",
+            "label" : "Review1",
+            "fieldHint" : "The extent to which resolution of an incident can bear delay",
+            "canWrite" : true,
+            "canRead" : true,
+            "canCreate" : true,
+            "internalType" : "integer",
+            "isMandatory" : false,
+            "isEncrypted" : false,
+            "encryptionContext" : "",
+            "sys_readonly" : false,
+            "attributes" : [ ]
+          },
+          "choices" : [ {
+            "displayValue" : "1 - High",
+            "value" : "1"
+          }, {
+            "displayValue" : "2 - Medium",
+            "value" : "2"
+          }, {
+            "displayValue" : "3 - Low",
+            "value" : "3"
+          } ],
+          "type" : "choice",
+          "label" : "Review1",
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "dependentField" : null,
+          "dependentTable" : null,
+          "referringTable" : "incident",
+          "referringRecordId" : "f3b281bf871f5510e942a9773cbb35b1",
+          "internalType" : "integer",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "isGlideVar" : false,
+          "value" : "3",
+          "displayValue" : "3 - Low",
+          "valuesList" : [ ],
+          "display_value_list" : [ ],
+          "sys_readonly" : false,
+          "originalValue" : "3"
+        }
+      },
+      "start1" : {
+        "fieldType" : "dateTime",
+        "label" : "Start1",
+        "name" : "start1",
+        "fieldData" : {
+          "name" : "start1",
+          "label" : "Start1",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "type" : "glide_date_time",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "glide_date_time",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "value" : null,
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "end1" : {
+        "fieldType" : "dateTime",
+        "label" : "End1",
+        "name" : "end1",
+        "fieldData" : {
+          "name" : "end1",
+          "label" : "End1",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "type" : "glide_date_time",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "glide_date_time",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "value" : null,
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "title2" : {
+        "fieldType" : "string",
+        "label" : "Title2",
+        "name" : "title2",
+        "fieldData" : {
+          "name" : "title2",
+          "label" : "Title2",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "maxLength" : 160,
+          "defaultRows" : null,
+          "type" : "string",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "string",
+          "value" : "",
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "annual_rgu_target2" : {
+        "fieldType" : "integer",
+        "label" : "Annual RGU Target2",
+        "name" : "annual_rgu_target2",
+        "fieldData" : {
+          "name" : "annual_rgu_target2",
+          "dictionary" : {
+            "type" : "integer",
+            "dependentFieldLabel" : null,
+            "dependentField" : null,
+            "dependentTable" : null,
+            "name" : "annual_rgu_target2",
+            "label" : "Annual RGU Target2",
+            "fieldHint" : "",
+            "canWrite" : true,
+            "canRead" : true,
+            "canCreate" : true,
+            "internalType" : "integer",
+            "isMandatory" : false,
+            "isEncrypted" : false,
+            "encryptionContext" : "",
+            "sys_readonly" : false,
+            "attributes" : [ ]
+          },
+          "maxLength" : 40,
+          "defaultRows" : null,
+          "type" : "integer",
+          "label" : "Annual RGU Target2",
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "dependentField" : null,
+          "dependentTable" : null,
+          "referringTable" : null,
+          "referringRecordId" : null,
+          "internalType" : "integer",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "isGlideVar" : false,
+          "value" : "",
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ],
+          "sys_readonly" : false,
+          "originalValue" : "",
+          "autofocus" : true
+        }
+      },
+      "review2" : {
+        "fieldType" : "choice",
+        "label" : "Review2",
+        "name" : "review2",
+        "fieldData" : {
+          "name" : "review2",
+          "dictionary" : {
+            "type" : "choice",
+            "dependentFieldLabel" : null,
+            "dependentField" : null,
+            "dependentTable" : null,
+            "name" : "review2",
+            "label" : "Review2",
+            "fieldHint" : "The extent to which resolution of an incident can bear delay",
+            "canWrite" : true,
+            "canRead" : true,
+            "canCreate" : true,
+            "internalType" : "integer",
+            "isMandatory" : false,
+            "isEncrypted" : false,
+            "encryptionContext" : "",
+            "sys_readonly" : false,
+            "attributes" : [ ]
+          },
+          "choices" : [ {
+            "displayValue" : "1 - High",
+            "value" : "1"
+          }, {
+            "displayValue" : "2 - Medium",
+            "value" : "2"
+          }, {
+            "displayValue" : "3 - Low",
+            "value" : "3"
+          } ],
+          "type" : "choice",
+          "label" : "Review2",
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "dependentField" : null,
+          "dependentTable" : null,
+          "referringTable" : "incident",
+          "referringRecordId" : "f3b281bf871f5510e942a9773cbb35b1",
+          "internalType" : "integer",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "isGlideVar" : false,
+          "value" : "3",
+          "displayValue" : "3 - Low",
+          "valuesList" : [ ],
+          "display_value_list" : [ ],
+          "sys_readonly" : false,
+          "originalValue" : "3"
+        }
+      },
+      "start2" : {
+        "fieldType" : "dateTime",
+        "label" : "Start2",
+        "name" : "start2",
+        "fieldData" : {
+          "name" : "start2",
+          "label" : "Start2",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "type" : "glide_date_time",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "glide_date_time",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "value" : null,
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "end2" : {
+        "fieldType" : "dateTime",
+        "label" : "End2",
+        "name" : "end2",
+        "fieldData" : {
+          "name" : "end2",
+          "label" : "End2",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "type" : "glide_date_time",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "glide_date_time",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "value" : null,
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "title3" : {
+        "fieldType" : "string",
+        "label" : "Title3",
+        "name" : "title3",
+        "fieldData" : {
+          "name" : "title3",
+          "label" : "Title3",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "maxLength" : 160,
+          "defaultRows" : null,
+          "type" : "string",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "string",
+          "value" : "",
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "annual_rgu_target3" : {
+        "fieldType" : "integer",
+        "label" : "Annual RGU Target3",
+        "name" : "annual_rgu_target3",
+        "fieldData" : {
+          "name" : "annual_rgu_target3",
+          "dictionary" : {
+            "type" : "integer",
+            "dependentFieldLabel" : null,
+            "dependentField" : null,
+            "dependentTable" : null,
+            "name" : "annual_rgu_target3",
+            "label" : "Annual RGU Target3",
+            "fieldHint" : "",
+            "canWrite" : true,
+            "canRead" : true,
+            "canCreate" : true,
+            "internalType" : "integer",
+            "isMandatory" : false,
+            "isEncrypted" : false,
+            "encryptionContext" : "",
+            "sys_readonly" : false,
+            "attributes" : [ ]
+          },
+          "maxLength" : 40,
+          "defaultRows" : null,
+          "type" : "integer",
+          "label" : "Annual RGU Target3",
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "dependentField" : null,
+          "dependentTable" : null,
+          "referringTable" : null,
+          "referringRecordId" : null,
+          "internalType" : "integer",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "isGlideVar" : false,
+          "value" : "",
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ],
+          "sys_readonly" : false,
+          "originalValue" : "",
+          "autofocus" : true
+        }
+      },
+      "review3" : {
+        "fieldType" : "choice",
+        "label" : "Review3",
+        "name" : "review3",
+        "fieldData" : {
+          "name" : "review3",
+          "dictionary" : {
+            "type" : "choice",
+            "dependentFieldLabel" : null,
+            "dependentField" : null,
+            "dependentTable" : null,
+            "name" : "review3",
+            "label" : "Review3",
+            "fieldHint" : "The extent to which resolution of an incident can bear delay",
+            "canWrite" : true,
+            "canRead" : true,
+            "canCreate" : true,
+            "internalType" : "integer",
+            "isMandatory" : false,
+            "isEncrypted" : false,
+            "encryptionContext" : "",
+            "sys_readonly" : false,
+            "attributes" : [ ]
+          },
+          "choices" : [ {
+            "displayValue" : "1 - High",
+            "value" : "1"
+          }, {
+            "displayValue" : "2 - Medium",
+            "value" : "2"
+          }, {
+            "displayValue" : "3 - Low",
+            "value" : "3"
+          } ],
+          "type" : "choice",
+          "label" : "Review3",
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "dependentField" : null,
+          "dependentTable" : null,
+          "referringTable" : "incident",
+          "referringRecordId" : "f3b281bf871f5510e942a9773cbb35b1",
+          "internalType" : "integer",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "isGlideVar" : false,
+          "value" : "3",
+          "displayValue" : "3 - Low",
+          "valuesList" : [ ],
+          "display_value_list" : [ ],
+          "sys_readonly" : false,
+          "originalValue" : "3"
+        }
+      },
+      "start3" : {
+        "fieldType" : "dateTime",
+        "label" : "Start3",
+        "name" : "start3",
+        "fieldData" : {
+          "name" : "start3",
+          "label" : "Start3",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "type" : "glide_date_time",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "glide_date_time",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "value" : null,
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      },
+      "end3" : {
+        "fieldType" : "dateTime",
+        "label" : "End3",
+        "name" : "end3",
+        "fieldData" : {
+          "name" : "end3",
+          "label" : "End3",
+          "defer" : true,
+          "visible" : true,
+          "readonly" : false,
+          "mandatory" : false,
+          "isEncrypted" : false,
+          "encryptionContext" : "",
+          "sys_readonly" : false,
+          "canWrite" : true,
+          "canRead" : true,
+          "canCreate" : true,
+          "fieldHint" : null,
+          "isGlideVar" : false,
+          "type" : "glide_date_time",
+          "dependentField" : null,
+          "dependentTable" : null,
+          "internalType" : "glide_date_time",
+          "referenceSysId" : "",
+          "highlightedValue" : { },
+          "value" : null,
+          "displayValue" : null,
+          "valuesList" : [ ],
+          "display_value_list" : [ ]
+        }
+      }
+    }
+  }
+}, {
+  "name" : "sections123",
+  "label" : "sections123",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ {
+      "sysId" : "1234",
+      "caption" : "test_section",
+      "captionDisplay" : "Test Section Caption",
+      "rows" : [ [ {
+        "fields" : [ "title1" ]
+      } ], [ {
+        "fields" : [ "annual_rgu_target1", "review1" ]
+      } ], [ {
+        "fields" : [ "start1", "end1" ]
+      } ] ],
+      "id" : "0",
+      "label" : "Test Section",
+      "defaultSection" : true,
+      "expanded" : true
+    } ]
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2022-11-20 13:42:32</sys_created_on>
         <sys_id>a1c9121d875b9110e942a9773cbb359e</sys_id>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>Home default</sys_name>
         <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
         <sys_update_name>sys_ux_macroponent_a1c9121d875b9110e942a9773cbb359e</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2022-11-29 07:57:05</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=a1c9121d875b9110e942a9773cbb359e"/>
 </record_update>
