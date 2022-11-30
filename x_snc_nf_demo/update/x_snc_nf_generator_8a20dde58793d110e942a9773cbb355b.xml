@@ -3,48 +3,91 @@
         <name>Sample NextForm Generator</name>
         <script><![CDATA[(function generateNextFormObject() {
 
-	return new x_snc_nf.NextForm()
-		.addScreen()
-		.addRow().addColumn()
-		.addField(new x_snc_nf.NextField("string", "What is your given name?", "name_given"))
-		.addRow().addColumn()
-		.addField(new x_snc_nf.NextField("integer", "What is your family name?", "name_family"))
-		.addField(new x_snc_nf.NextField("choice", "What is your age?", "age", {
+    return new x_snc_nf.NextForm()
+        .addScreen()
+        .addRow().addColumn()
+        .addField(new x_snc_nf.NextField("string", "What is your given name?", "name_given"))
+        .addRow().addColumn()
+        .addField(new x_snc_nf.NextField("integer", "What is your family name?", "name_family"))
+        .addField(new x_snc_nf.NextField("choice", "What is your age?", "age", {
             choices: [{
                 displayValue: "Under 18",
                 value: "under_18"
-            },{
+            }, {
                 displayValue: "18 and Over",
                 value: "over_18"
             }],
             value: 'under_18',
             displayValue: 'Under 18'
         }))
-		.addColumn()
-		.addField(new x_snc_nf.NextField("dateTime", "When did you last sleep?", "sleep"))
-		.addField(new x_snc_nf.NextField("dateTime", "When did you last wake up?", "wake"))
-		.addScreen()
-		.addRow().addColumn()
-		.addField(new x_snc_nf.NextField("textarea", "Tell me about yourself?", "details", {
+        .addColumn()
+        .addField(new x_snc_nf.NextField("dateTime", "When did you last sleep?", "sleep"))
+        .addField(new x_snc_nf.NextField("dateTime", "When did you last wake up?", "wake"))
+        .addScreen()
+        .addRow().addColumn()
+        .addField(new x_snc_nf.NextField("textarea", "Tell me about yourself?", "details", {
             maxLength: 4000
         }))
-		.addScreen()
-		.addRow().addColumn()
-		.addField(new x_snc_nf.NextField("boolean", "Would you like to receive marketing communications?", "marketing_allowed"))
-        .toJSON();
+        .addScreen()
+        .addRow().addColumn()
+        .addField(new x_snc_nf.NextField("string", "Test String Field", "f_string"))
+        .addField(new x_snc_nf.NextField("dateTime", "Test Date/Time Field", "f_dateTime"))
+        .addField(new x_snc_nf.NextField("integer", "Test Integer Field", "f_integer"))
+        .addField(new x_snc_nf.NextField("choice", "Test Choice Field", "f_choice", {
+            choices: [{
+                displayValue: "Choice 1",
+                value: "choice_1"
+            }, {
+                displayValue: "Choice 2",
+                value: "choice_2"
+            }],
+            value: 'choice_1',
+            displayValue: 'Choice 1'
+        }))
+        .addField(new x_snc_nf.NextField("boolean", "Test Boolean Field", "f_boolean"))
+        .addField(new x_snc_nf.NextField("currency", "Test Currency Field", "f_currency", {
+            currencyCodes: [{
+                    "code": "CHF",
+                    "symbol": "CHF"
+                },
+                {
+                    "code": "EUR",
+                    "symbol": "€"
+                },
+                {
+                    "code": "GBP",
+                    "symbol": "£"
+                },
+                {
+                    "code": "JPY",
+                    "symbol": "¥"
+                },
+                {
+                    "code": "USD",
+                    "symbol": "$"
+                }
+            ]
+        }))
+        .addField(new x_snc_nf.NextField("decimal", "Test Decimal Field", "f_decimal"))
+        .addField(new x_snc_nf.NextField("date", "Test Date Field", "f_date"))
+        .addField(new x_snc_nf.NextField("list", "Test List Field", "f_list", { reference: "sys_user" }))
+        .addField(new x_snc_nf.NextField("time", "Test Time Field", "f_time"))
+        .addField(new x_snc_nf.NextField("html", "Test HTML Field", "f_html"))
+        .addField(new x_snc_nf.NextField("reference", "Test Reference Field", "f_reference", { reference: "sys_user" }))
+        .addField(new x_snc_nf.NextField("url", "Test URL Field", "f_url"));
 
 })();]]></script>
         <sys_class_name>x_snc_nf_generator</sys_class_name>
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2022-11-21 03:02:17</sys_created_on>
         <sys_id>8a20dde58793d110e942a9773cbb355b</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Sample NextForm Generator</sys_name>
         <sys_package display_value="NextForm Demo" source="x_snc_nf_demo">75499e99875b9110e942a9773cbb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="NextForm Demo">75499e99875b9110e942a9773cbb3590</sys_scope>
         <sys_update_name>x_snc_nf_generator_8a20dde58793d110e942a9773cbb355b</sys_update_name>
         <sys_updated_by>dylan.lindgren</sys_updated_by>
-        <sys_updated_on>2022-11-29 08:33:22</sys_updated_on>
+        <sys_updated_on>2022-11-30 04:11:00</sys_updated_on>
     </x_snc_nf_generator>
 </record_update>
